@@ -23,7 +23,7 @@ const TopPhotos = async () => {
       <div className="flex justify-center items-center mt-5">
         <Link href={"/all-photos"}>
           <Button>
-            View All <FaLongArrowAltRight />
+            View All <FaLongArrowAltRight/>
           </Button>{" "}
         </Link>
       </div>
