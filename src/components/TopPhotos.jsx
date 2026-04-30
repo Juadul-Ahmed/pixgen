@@ -8,7 +8,7 @@ const TopPhotos = async () => {
   const res = await fetch("http://localhost:3000/data.json");
   const photos = await res.json();
   const topPhotos = photos.slice(0, 9);
-  console.log(topPhotos);
+
 
   return (
     <div className="space-y-4">

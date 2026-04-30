@@ -4,7 +4,7 @@ import React from 'react';
 const ALlPhotosPage = async () => {
   const res = await fetch('http://localhost:3000/data.json')
   const allPhotos = await res.json()
-  console.log(allPhotos)
+
   return (
     <div>
       <h1 className='tex-center mb-4 mt-4 text-3xl text-center'>All Photos</h1>

@@ -5,7 +5,7 @@ import React from "react";
 import { FaDownload, FaRegThumbsUp } from "react-icons/fa";
 
 const PhotoCard = ({ photo }) => {
-  console.log(photo);
+
 
   return (
     <Card className="border">
