@@ -20,19 +20,19 @@ const PhotoDetails = async ({ params }) => {
       </Link>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 bg-white rounded-xl shadow-lg overflow-hidden">
-        {/* Left Side: Image Container */}
+    
        <div className="relative w-full h-[400px] md:h-[600px] bg-gray-50">
     <Image
       src={photo.imageUrl}
       alt={photo.title}
-      fill // This makes the image fill the parent container
-      className="object-cover" // This ensures the image covers the area without distortion
+      fill 
+      className="object-cover" 
       unoptimized
-      priority // Optional: helps with LCP performance for detail pages
+      priority 
     />
   </div>
 
-        {/* Right Side: Details */}
+     
         <div className="p-8 flex flex-col justify-center">
           <h1 className="text-4xl font-bold text-gray-800 mb-4">
             {photo.title}
