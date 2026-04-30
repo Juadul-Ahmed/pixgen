@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logo from "@/components/logo.png"
+import { Button } from "@heroui/react";
 
 const NavBar = () => {
   return (
@@ -35,12 +36,18 @@ const NavBar = () => {
         </ul>
 
         <div className="flex gap-4">
-          <ul className="flex items-center  text-sm">
+          <ul className="flex items-center gap-4   text-sm">
             <li>
-              <Link href={"/signup"}>SignUp</Link>
+            <Button variant="outline" className={'mr-4'}>
+                <Link href={"/signup"}>SignUp</Link>
+            </Button>
+              
             </li>
             <li>
-              <Link href={"/signin"}>SignIn</Link>
+            <Button>
+                 <Link href={"/signin"}>SignIn</Link>
+            </Button>
+             
             </li>
           </ul>
         </div>
